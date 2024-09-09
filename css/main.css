@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body{
+     background-image: url("https://img.goodfon.com/original/1920x1080/b/b6/music-musical-instrument-guitar-two-dark-background.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background-attachment: fixed
+}
+
+.container{
+     max-width: 400px;
+     margin: 0 auto;
+     padding: 20px 20px;
+     font-family: "Roboto", sans-serif;
+}
+nav .container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #030e3577;
+     border-radius: 20px 20px 0px 0px;
+     color: white;
+}
+
+.hero{
+     background-color: #030e3586;
+     border-radius: 0px 0px 20px 20px;
+}
+.hero .container{
+     position: relative;
+     overflow: hidden;
+}
+
+.modal{
+     position: absolute;
+     top: -500px;
+     width: 100%;
+     min-height: 200px;
+     left: 0;
+     z-index: 1;
+     background-color: #030e3577;
+     backdrop-filter: blur(5px);
+     transition: all .4s ease-in-out;
+}
+.modal.active{
+     top: 50px;
+}
+.modal-content{
+     width: 100%;
+     height: 100%;
+     line-height: 40px;
+     display: flex;
+     align-items: end;
+     padding: 20px;
+     color: rgb(224, 208, 208);
+     flex-direction: column;
+}
+.modal-content h3{
+     transition: all 0.2s ease-in-out;
+}
+.modal-content h3:hover{
+     transform: scale(1.1);
+     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.music_img{
+     display: flex;
+     margin: 0 auto;
+     width: 300px;
+     height: 300px;
+     border-radius: 50%;
+     animation: load 10s linear infinite;
+     animation-play-state: paused;
+     transition: transform 0.1s ease-in-out;
+}
+.soat{
+     display: flex;
+}
+
+
+.container.load .music_img{
+     animation-play-state: running;
+}
+
+
+
+@keyframes load {
+     0%{
+          transform: rotate(0deg);
+     }
+     100%{
+          transform: rotate(360deg);
+     }
+}
+
+
+
+
+
+
+
+
+
+.playlist{
+     display: flex;
+     justify-content: space-between;
+     color: white;
+     margin-bottom: 20px;
+     transition: all 0.5s ease-in-out;
+}
+.playlist img:hover{
+     cursor: pointer;
+     transform: scale(1.1);
+}
+.muzic-title{
+     color: white;
+     text-align: center;
+     margin-top: 20px;
+}
+.muzic-title p{
+     color: #466FFF;
+}
+.muzic-time{
+     max-width: 80%;
+     margin: 0 auto;
+     margin-top: 20px;
+     color: #ffffff78;
+     border: 1px solid white;
+     border-radius: 4px;
+     padding: 2px 0px;
+     font-size: 10px;
+}
+.time{
+     max-width: 80%;
+     margin: 0 auto;
+     color: white;
+     display: flex;
+     font-size: 12px;
+     margin-top: 5px;
+     justify-content: space-between;
+}
+
+.muzic-time .line{
+     width: 0%;
+     background-color:  #466FFF;
+     height: 3px;
+}
+.muzic-play{
+     max-width: 75%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+     margin-bottom: 20px;
+}
+.muzic-play .fa-solid{
+     font-size: 40px;
+     color: #466FFF;
+     cursor: pointer;
+}
+
+.muzic-play img{
+     width: 30px;
+     cursor: pointer;
+}
+.muzic-repeat{
+     max-width: 75%;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-bottom: 50px;
+}
+.muzic-repeat img{
+     cursor: pointer;
+}
+.muzic-volume{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     gap: 3px;
+     justify-content: center;
+}
+.muzic-volume input{
+     width: 75%;
+     color: rgba(255, 255, 255, 0.266);
+}
+
+
+
