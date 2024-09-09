@@ -195,8 +195,10 @@ nav .container{
      align-items: center;
      gap: 3px;
      justify-content: center;
+     margin-top: 40px;
 }
 .muzic-volume input{
+     height: 6px;
      width: 75%;
      color: rgba(255, 255, 255, 0.266);
 }

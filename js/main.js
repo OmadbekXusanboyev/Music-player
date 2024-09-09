@@ -13,7 +13,7 @@ const muzic_time = document.querySelector(".muzic-time");
 const modal = document.querySelector(".modal");
 const modal_content = document.querySelector(".modal-content");
 const menu = document.querySelector(".menu");
-menu
+const arrow_left = document.querySelector(".arrow-left")
 const startTime = document.querySelector(".startTime")
 const endTime = document.querySelector(".endTime")
 
@@ -23,6 +23,9 @@ const volume = document.querySelector(".volume")
 
 menu.addEventListener("click", () => {
   modal.classList.toggle("active");
+})
+arrow_left.addEventListener("click", () => {
+  modal.classList.remove("active");
 })
 
 
